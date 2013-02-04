@@ -12,8 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{cut images and generate javascript code for you}
   gem.homepage      = ""
 
-  gem.add_development_dependency 'rmagick'
-
+  gem.add_dependency('rmagick')
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
